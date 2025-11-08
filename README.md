@@ -24,9 +24,11 @@ El objetivo es limpiar texto (eliminando acentos, puntuación y mayúsculas), to
 
 4. **Probabilidades**
    - Calcula la probabilidad de cada bigrama como:
-     \[
-     P(w_2 | w_1) = \frac{\text{freq}(w_1, w_2)}{\text{freq}(w_1)}
-     \]
+
+     $$
+     P(w_2 \mid w_1) = \frac{\text{freq}(w_1, w_2)}{\text{freq}(w_1)}
+     $$
+
 
 5. **Predicción de la siguiente palabra (`predict_next_word`)**
    - Dada una palabra, devuelve las 3 palabras más probables que la sigan según las frecuencias de bigramas.
